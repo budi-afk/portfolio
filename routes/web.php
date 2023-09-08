@@ -18,6 +18,23 @@ Route::get('/', function () {
     return view('frontend.home');
 });
 
+Route::get('/blog', function () {
+    return view('frontend.blog');
+});
+
+Route::get('/blog-details', function () {
+    return view('frontend.blog-details');
+});
+
+Route::get('/portfolio', function () {
+    return view('frontend.portfolio');
+});
+
+Route::get('/portfolio-details', function () {
+    return view('frontend.portfolio-details');
+});
+
+
 Route::get('/dashboard', function () {
     return view('admin.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
